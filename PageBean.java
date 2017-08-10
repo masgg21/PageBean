@@ -16,7 +16,7 @@ public class PageBean {
     }
 
     public int getPageIndex() {
-        return pageIndex;
+        return this.pageIndex > this.total ? this.total : this.pageIndex;
     }
 
     private void setPageIndex(int pageIndex) {
