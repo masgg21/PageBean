@@ -20,7 +20,7 @@ public class PageBean {
     }
 
     private void setPageIndex(int pageIndex) {
-        this.pageIndex = (pageIndex <= 0) ? 0 : pageIndex - 1;
+        this.pageIndex = (pageIndex <= 0) ? 0 : ((pageIndex - 1) * pageSize);
     }
 
     public int getPageSize() {
